@@ -1,0 +1,68 @@
+{
+  "total_rows": 569,
+  "features": 30,
+  "malignant": 212,
+  "benign": 357,
+  "train_rows": 455,
+  "test_rows": 114,
+  "test_malignant": 42,
+  "test_benign": 72,
+  "duplicate_removed": 0,
+  "missing_total": 0,
+  "random_state": 42,
+  "models": [
+    {
+      "model": "GaussianNB",
+      "cv_auc": 0.9869969040247678,
+      "test_accuracy": 0.9210526315789473,
+      "test_precision": 0.9230769230769231,
+      "test_recall": 0.8571428571428571,
+      "test_f1": 0.8888888888888888,
+      "test_auc": 0.9890873015873015,
+      "test_brier": 0.07566584768823752,
+      "tn": 69,
+      "fp": 3,
+      "fn": 6,
+      "tp": 36,
+      "best_params": {
+        "model__var_smoothing": 1e-12
+      }
+    },
+    {
+      "model": "LogisticRegression",
+      "cv_auc": 0.9957688338493291,
+      "test_accuracy": 0.9649122807017544,
+      "test_precision": 0.975,
+      "test_recall": 0.9285714285714286,
+      "test_f1": 0.9512195121951219,
+      "test_auc": 0.996031746031746,
+      "test_brier": 0.02131313900119227,
+      "tn": 71,
+      "fp": 1,
+      "fn": 3,
+      "tp": 39,
+      "best_params": {
+        "model__C": 1
+      }
+    },
+    {
+      "model": "RandomForest",
+      "cv_auc": 0.9889060887512902,
+      "test_accuracy": 0.9736842105263158,
+      "test_precision": 1.0,
+      "test_recall": 0.9285714285714286,
+      "test_f1": 0.9629629629629629,
+      "test_auc": 0.9928902116402116,
+      "test_brier": 0.03241491228070175,
+      "tn": 72,
+      "fp": 0,
+      "fn": 3,
+      "tp": 39,
+      "best_params": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 1,
+        "model__n_estimators": 100
+      }
+    }
+  ]
+}
